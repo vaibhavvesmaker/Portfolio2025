@@ -125,7 +125,7 @@ const Navbar = () => {
                   Resume
                 </a>
               </li>
-            </ul>
+            </ul> 
           </div>
         </div>
       </div>
