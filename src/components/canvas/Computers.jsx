@@ -8,10 +8,10 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
+      {/* Lighting */}
       <hemisphereLight intensity={0.15} groundColor="black" />
       <pointLight intensity={1} />
       <spotLight
-        visible
         position={[-20, 50, 10]}
         angle={0.12}
         intensity={1}
@@ -19,10 +19,12 @@ const Computers = ({ isMobile }) => {
         castShadow
         shadow-mapSize={1024}
       />
+
+      {/* 3D Model */}
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.65 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.5 : 0.65} // Smaller scale for mobile
+        position={isMobile ? [-3, -3, -2.2] : [-5, -3.25, -1.5]} // Shifted further left
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -34,12 +36,13 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
+
     // Add the callback function as a listener for changes to the media query
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
@@ -53,7 +56,10 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{
+        position: isMobile ? [10, 3, 5] : [20, 3, 5], // Adjusted camera position
+        fov: 25,
+      }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
