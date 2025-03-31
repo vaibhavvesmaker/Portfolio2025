@@ -64,8 +64,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Innovative {personalInfo.role}, <br className="sm:block hidden" />
-            solving business problems with actionable insights.
+            {/* Innovative {personalInfo.role}, <br className="sm:block hidden" /> */}
+            Solving the whys in your business—turning questions<br></br> into actionable insights.
           </motion.p>
         </div>
       </div>

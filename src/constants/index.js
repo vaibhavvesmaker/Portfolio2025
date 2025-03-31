@@ -56,19 +56,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "React Developer",
+    title: "Technical Project Manager",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Data Analyst",
     icon: mobile,
   },
   {
-    title: "NodeJs Developer",
+    title: "Business Intelligence",
     icon: backend,
   },
   {
-    title: "Javascript Developer",
+    title: "Quantitative Forecasting",
     icon: creator,
   },
 ];
@@ -337,10 +337,10 @@ const projects = [
 ];
 
 const personalInfo = {
-  name: "Vaibhav",
+  name: "Vai",
   fullName: "Vaibhav Vesmaker",
   email: "vaibhavvesmaker@gmail.com",
-  role: "Technical Project Manager & Data Analyst",
+  role: "Technical Project Manager & Data Geek",
   about: `I am a versatile professional with expertise in project management, data analytics, and business intelligence. With a strong foundation in Agile methodologies, stakeholder management, and data-driven decision-making, I excel at bridging the gap between technical and business teams. My experience spans leading cross-functional teams, automating workflows, and delivering actionable insights through advanced data visualization and reporting tools like Power BI, Tableau, and SQL. Whether it's optimizing processes, managing complex projects, or analyzing data to drive strategic decisions, I bring a results-oriented approach to every challenge.`,
   projectsIntro: `The following projects showcase my ability to manage complex projects, analyze data, and deliver innovative solutions. Each project reflects my expertise in leveraging technology to solve real-world problems, streamline workflows, and enhance business outcomes.`,
 
@@ -357,7 +357,7 @@ const publicUrls = {
     },
     github: {
       title: "github",
-      link: "https://github.com/shridharrai",
+      link: "https://github.com/vaibhavvesmaker",
       icon: github,
     },
   },
