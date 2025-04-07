@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://vaibhavvesmaker.netlify.app/sitemap.xml
