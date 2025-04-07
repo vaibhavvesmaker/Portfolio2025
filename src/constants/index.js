@@ -134,12 +134,53 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Technical Project Manager (Business Intelligence)",
+    company_name: "CoreCentrica LLC",
+    company_website: "https://www.corecentrica.com/",
+    icon: crmnext,
+    iconBg: "#E6DEDD",
+    date: "June 2024 - Present",
+    points: [
+      "Managed multiple concurrent projects valued over $10,000+, overseeing project planning, execution, and delivery while ensuring alignment with business objectives and regulatory standards.",
+      "Led cross-functional teams across IT, finance, and operations, improving workflow efficiency by 25% through automation and process optimization.",
+      "Implemented risk assessment strategies to identify and mitigate project risks, reducing delays by 30%.",
+      "Developed and maintained project dashboards and reporting tools using Power BI and Excel, providing leadership with real-time insights.",
+      "Managed stakeholder communication, ensuring clear requirement documentation, project forecasting, and budget management.",
+    ],
+  },
+  {
+    title: "Data Engineer Intern",
+    company_name: "Site Service Software Inc.",
+    company_website: "https://www.siteservicesoftware.com/",
+    icon: nickelfox,
+    iconBg: "#E6DEDD",
+    date: "June 2023 - September 2023",
+    points: [
+      "Implemented data pipelines in Snowflake to integrate multiple healthcare data sources, improving data processing efficiency by 35%.",
+      "Developed SQL-based data models for membership lifecycle tracking, enhancing reporting accuracy for business stakeholders.",
+      "Assisted in resolving production support issues, reducing response time by 25% through proactive monitoring and automation.",
+    ],
+  },
+  {
+    title: "Data Analyst Intern",
+    company_name: "Marketeq Digital",
+    company_website: "https://www.marketeqdigital.com/",
+    icon: newgen,
+    iconBg: "#E6DEDD",
+    date: "October 2022 - December 2022",
+    points: [
+      "Designed predictive analytics dashboards in Power BI, increasing forecasting accuracy for marketing trends by 18%.",
+      "Automated data collection and cleansing processes using Python, reducing data wrangling time by 50%.",
+      "Conducted customer behavior analysis using SQL queries, providing insights that led to a 12% increase in customer retention.",
+    ],
+  },
+  {
     title: "Software Engineer",
     company_name: "Crmnext",
     company_website: "https://www.businessnext.com/crm",
     icon: crmnext,
     iconBg: "#E6DEDD",
-    date: "Nov 2023 - Present",
+    date: "Nov 2023 - Jan 2024",
     points: [
       "Developed Flow and Layout Designers for HDFC, PNB, IOB, and Utkarsh Bank.",
       "Boosted team efficiency by 50% by implementing monorepo architecture and reusable Design-System.",
