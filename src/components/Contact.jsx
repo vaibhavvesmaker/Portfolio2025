@@ -51,7 +51,7 @@ const Contact = () => {
         () => {
           setModalContent({
             title: "Success!",
-            message: "Thank you. I will get back to you as soon as possilbe.",
+            message: "Thank you. I will get back to you as soon as possible.",
             buttonText: "Ok",
           });
           setIsModalVisible(true);
@@ -153,6 +153,44 @@ const Contact = () => {
               {loading ? "Sending..." : "Send"}
             </button>
           </form>
+
+          <div className="mt-8">
+            <p className="text-secondary text-[15px]">
+              Learn more about my{" "}
+              <a
+                href="/about-vaibhav-vesmaker"
+                className="text-blue-500 hover:underline"
+              >
+                background
+              </a>{" "}
+              or explore my{" "}
+              <a
+                href="/projects"
+                className="text-blue-500 hover:underline"
+              >
+                projects
+              </a>
+              . Connect with me on{" "}
+              <a
+                href="https://www.linkedin.com/in/vaibhav-vesmaker-5368841b6/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                LinkedIn
+              </a>{" "}
+              or view my{" "}
+              <a
+                href="https://github.com/vaibhavvesmaker"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                GitHub
+              </a>
+              .
+            </p>
+          </div>
         </motion.div>
 
         <motion.div
