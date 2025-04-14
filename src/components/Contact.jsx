@@ -32,30 +32,35 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-
+  
+    const emailData = {
+      from_name: form.name,
+      to_name: "Vaibhav Vesmaker",
+      from_email: form.email,
+      to_email: "vaibhav.vesmaker@rutgers.edu",
+      message: form.message,
+      reply_to: form.email,
+    };
+  
+    console.log("Sending data to EmailJS:", emailData);
+  
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: personalInfo.fullName,
-          from_email: form.email,
-          to_email: personalInfo.email,
-          message: form.message,
-          reply_to: form.email,
-        },
+        emailData,
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
+          console.log("Email sent successfully!");
           setModalContent({
             title: "Success!",
             message: "Thank you. I will get back to you as soon as possible.",
             buttonText: "Ok",
           });
           setIsModalVisible(true);
-
+  
           setForm({
             name: "",
             email: "",
@@ -63,7 +68,7 @@ const Contact = () => {
           });
         },
         (error) => {
-          console.log("Error while sending mail ", error);
+          console.error("Error while sending mail:", error);
           setModalContent({
             title: "Error!",
             message: "Ahh, something went wrong. Please try again.",

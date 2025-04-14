@@ -380,7 +380,7 @@ const projects = [
 const personalInfo = {
   name: "Vai",
   fullName: "Vaibhav Vesmaker",
-  email: "vaibhavvesmaker@gmail.com",
+  email: "vaibhav.vesmaker@rutgers.edu",
   role: "Technical Project Manager & Data Geek",
   about: `I am a versatile professional with expertise in project management, data analytics, and business intelligence. With a strong foundation in Agile methodologies, stakeholder management, and data-driven decision-making, I excel at bridging the gap between technical and business teams. My experience spans leading cross-functional teams, automating workflows, and delivering actionable insights through advanced data visualization and reporting tools like Power BI, Tableau, and SQL. Whether it's optimizing processes, managing complex projects, or analyzing data to drive strategic decisions, I bring a results-oriented approach to every challenge.`,
   projectsIntro: `The following projects showcase my ability to manage complex projects, analyze data, and deliver innovative solutions. Each project reflects my expertise in leveraging technology to solve real-world problems, streamline workflows, and enhance business outcomes.`,
